@@ -1,0 +1,27 @@
+//Find the index of the minimum element and maximum element.
+import java.util.*;
+public class minmax {
+    public static void main (String[] args){
+        Scanner sc= new Scanner (System.in);
+
+        System.out.print("Enter the SIze of Array :");
+        int x=sc.nextInt();
+        int array[]= new int [x];
+        System.out.print("Enter Elements :");
+        for (int i=0; i<x; i++) {
+            array[i] = sc.nextInt();
+        }
+        int min=array[0];
+        int max=Integer.MIN_VALUE;
+        for (int i=0; i<x; i++){
+            if (array[i]>max) max=array[i];
+            if (array[i]<min) min=array[i];
+        }
+        int mini=0,maxi=0;
+        for (int i=0; i<array.length; i++){
+            if (array[i]==max) maxi=i;
+            if (array[i]==min) mini=i;
+        }
+        System.out.print("Minimun Value Index : "+mini+"\nMaximum Value Index : "+maxi);
+    }
+}
