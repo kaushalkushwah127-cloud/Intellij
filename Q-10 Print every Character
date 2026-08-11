@@ -1,0 +1,10 @@
+import java.util.*;
+public class print{
+    public static void main(String [] args){
+        Scanner sc= new Scanner (System.in);
+        String s=sc.nextLine();
+        for (char i: s.toCharArray()){
+            System.out.print(i+"\n");
+        }
+    }
+}
