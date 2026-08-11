@@ -1,0 +1,14 @@
+import java.util.*;
+public class vow{
+    public static void main(String [] args){
+        Scanner sc= new Scanner (System.in);
+        String s=sc.nextLine();
+        int vow=0;
+        for (char i: s.toCharArray()){
+            i=Character.toLowerCase(i);
+            if (i=='a' || i=='e' || i=='i' || i=='o' || i=='u') vow++;
+        }
+        System.out.print("Vowels : "+vow);
+    }
+
+}
